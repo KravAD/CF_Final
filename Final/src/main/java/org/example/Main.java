@@ -1,6 +1,7 @@
 package org.example;
 import Ejercicio_3.*;
 import Ejercicio_5.*;
+import java.time.LocalDate;
 import java.util.*;
 
 import static Ejercicio_3.CalcRecursiva.recursive;
@@ -28,8 +29,20 @@ public class Main {
 
         System.out.println("Enter tweet for user1:");
         String tweetMessage = scanner.nextLine();
-        Tweet tweet1 = new Tweet(tweetMessage);
+        Tweet tweet1 = new Tweet(LocalDate.now(), tweetMessage, user1);
         user1.tweet(tweet1);
+
+        System.out.println("Enter retweet for user2:");
+        String retweetMessage = scanner.nextLine();
+        Retweet retweet1 = new Retweet(LocalDate.now(), retweetMessage, user2, tweet1);
+        user2.tweet(retweet1);
+        System.out.println(retweet1.toString());
+
+        System.out.println("Enter direct message from user1 to user2:");
+        String directMessage = scanner.nextLine();
+        DirectMessage dm1 = new DirectMessage(LocalDate.now(), directMessage, user1, user2);
+        user1.sendDirectMessage(dm1);
+        System.out.println(dm1.toString());
 
         List<UserAccount> users = new ArrayList<>();
         users.add(user1);

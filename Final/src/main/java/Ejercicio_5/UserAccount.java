@@ -47,4 +47,7 @@ public class UserAccount {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public void sendDirectMessage(DirectMessage dm) {
+    }
 }
