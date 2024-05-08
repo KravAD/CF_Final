@@ -1,5 +1,6 @@
 package org.example;
 import Ejercicio_3.*;
+import Ejercicio_4.*;
 import Ejercicio_5.*;
 import java.time.LocalDate;
 import java.util.*;
@@ -8,8 +9,15 @@ import static Ejercicio_3.CalcRecursiva.recursive;
 
 public class Main {
     public static void main(String[] args) {
+        // Ejercicio 3
         int a = recursive(5,4 );
         System.out.println("El numero es: " + a);
+
+        // Ejercicio 4
+        int result = sumDigits.sumDigits(514);
+        System.out.println(result);
+
+        // Ejercicio 5
 
         Scanner scanner = new Scanner(System.in);
 
