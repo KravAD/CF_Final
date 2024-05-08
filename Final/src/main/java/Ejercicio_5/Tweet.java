@@ -23,4 +23,13 @@ public class Tweet {
     public void setMessage(String message) {
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+        return "Tweet{" +
+                "time=" + time +
+                ", message='" + message + '\'' +
+                ", sender=" + sender +
+                '}';
+    }
 }
