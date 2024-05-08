@@ -7,8 +7,8 @@ import static Ejercicio_3.CalcRecursiva.recursive;
 
 public class Main {
     public static void main(String[] args) {
-        int a = recursive(1, 0);
-        System.out.println(a);
+        int a = recursive(5,4 );
+        System.out.println("El numero es: " + a);
 
         Scanner scanner = new Scanner(System.in);
 
