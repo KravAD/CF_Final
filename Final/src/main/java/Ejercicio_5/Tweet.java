@@ -1,7 +1,11 @@
 package Ejercicio_5;
 
+import java.time.LocalDate;
+
 public class Tweet {
-    private String message;
+    protected LocalDate time;
+    protected String message;
+    protected UserAccount user;
 
     public Tweet(String message) {
         this.message = message;
